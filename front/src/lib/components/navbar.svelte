@@ -1,5 +1,4 @@
 <script>   
-    import { getCart } from '../main.js'
     import Cart from './cart.svelte'
 
  
@@ -8,25 +7,29 @@
     let visible = false;
     function toggle(){
         visible = !visible;
-    }
-    
+    } 
 </script>
 
 <header>
     <p>Bienvenue sur Pokeshop
     <img src="../img/cart.png" alt="cart" on:click={toggle}/></p>
     {#if visible}
-        <Cart />
+        <Cart/>
     {/if}
 </header>
 
 <style>
 
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
     header{
         background-color: #457B9D;
         width: 100%;
         height: 50px;
-        color: #F1FAEE;
+        color: #F1FAEE  ;
         position: fixed;
     }
 
