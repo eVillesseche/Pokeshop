@@ -11,7 +11,7 @@
 </script>
 
 <header>
-    <p>Bienvenue sur Pokeshop
+    <p> <a  href="/">Bienvenue sur Pokeshop</a>
     <img src="../img/cart.png" alt="cart" on:click={toggle}/></p>
     {#if visible}
         <Cart/>
