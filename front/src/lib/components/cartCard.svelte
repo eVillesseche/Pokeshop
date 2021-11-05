@@ -21,14 +21,14 @@
 
             <span>{card.data.name}</span>
             {#if card.number != 1}
-                <button on:click={() => {card.number -= 1; $total -= card.data.cardmarket.prices.avg1;}}>-</button>
+                <button on:click={() => {card.number -= 1; $total =(Math.round(($total - card.data.cardmarket.prices.avg1)*100)/100);}}>-</button>
                 {:else}
                 <button>-</button>
             {/if}
             <span>{card.number}</span>
-            <button on:click={() => {card.number += 1;  $total += card.data.cardmarket.prices.avg1;}}>+</button>
-            <button on:click={() =>{ $total -= (card.number * card.data.cardmarket.prices.avg1); deleteCard(card)}}>X</button>
-    </div>
+            <button on:click={() => {card.number += 1;  $total = (Math.round(($total + card.data.cardmarket.prices.avg1)*100)/100);}}>+</button>
+            <button on:click={() =>{ $total = (Math.round(($total - (card.number * card.data.cardmarket.prices.avg1))*100)/100); deleteCard(card)}}>X</button>
+    </div> 
 
 
 <style>

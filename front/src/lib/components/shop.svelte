@@ -40,7 +40,6 @@
     {:then data}
         <div id="gallery">
             {#each data.data as myCard}
-
                 <Card card={myCard}/>
             {/each}
         </div>

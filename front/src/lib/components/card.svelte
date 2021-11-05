@@ -24,7 +24,7 @@
             $cart = [...$cart, object]
         }
         
-        total.update(t=> t + object.data.cardmarket.prices.avg1);
+        total.update(t=> Math.round((t + object.data.cardmarket.prices.avg1)*100)/100);
         
 
         

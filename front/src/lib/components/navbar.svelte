@@ -1,9 +1,6 @@
 <script>   
     import Cart from './cart.svelte'
-
- 
-    let newcart;
-
+    
     let visible = false;
     function toggle(){
         visible = !visible;
