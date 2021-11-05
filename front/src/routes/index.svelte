@@ -6,15 +6,13 @@
 	import Shop from '$lib/components/shop.svelte'
 	let nPage = 1;
 </script>
+
 <svelte:head>
     <title>Pokeshop</title>
 </svelte:head>
 
 <main>
     <Shop/>
-
-
-
 </main>
 
 <style>

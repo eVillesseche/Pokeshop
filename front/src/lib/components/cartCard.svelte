@@ -15,7 +15,6 @@
 
 </script>
 
-
     <div class="content">
             <img src={card.data.images.small} alt="img {card.data.name}"/>
 
@@ -29,7 +28,6 @@
             <button on:click={() => {card.number += 1;  $total = (Math.round(($total + card.data.cardmarket.prices.avg1)*100)/100);}}>+</button>
             <button on:click={() =>{ $total = (Math.round(($total - (card.number * card.data.cardmarket.prices.avg1))*100)/100); deleteCard(card)}}>X</button>
     </div> 
-
 
 <style>
 
