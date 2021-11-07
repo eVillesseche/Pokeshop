@@ -9,7 +9,7 @@
 
 <header>
     <p> <a  href="/">Bienvenue sur Pokeshop</a>
-    <img src="../img/cart.png" alt="cart" on:click={toggle}/></p>
+    <img src="../img/cart.png" alt="cart" data-testid="cart" on:click={toggle}/></p>
     {#if visible}
         <Cart/>
     {/if}

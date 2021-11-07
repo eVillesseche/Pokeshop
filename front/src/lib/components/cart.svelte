@@ -1,6 +1,6 @@
 <script>
-    import { cart } from '../scripts/cart'
-    import { total } from '../scripts/total'
+    import { cart } from '../stores/cart'
+    import { total } from '../stores/total'
     
     import { slide } from "svelte/transition"
     import CartCard from './cartCard.svelte'
@@ -18,7 +18,7 @@
 
 </script>
 
-<div transition:slide id="cart">
+<div data-testid="cart" transition:slide id="cart">
 
 
 {#await cart_value}
@@ -36,7 +36,7 @@
             </div>
             {/each}
             <div>
-                <h2>Total: {total_value} €</h2>
+                <h2 data-testid="total ">Total: {total_value} €</h2>
             </div>
         {/if}
 {:catch error}

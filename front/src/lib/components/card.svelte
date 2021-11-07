@@ -3,8 +3,8 @@
 </script>
 
 <script>
-    import { cart } from '../scripts/cart'
-    import { total } from '../scripts/total'
+    import { cart } from '../stores/cart'
+    import { total } from '../stores/total'
     export let card;
 
     function addToCart(mycard){
@@ -41,7 +41,7 @@ function alreadyExist(json){
 </script>
 
 <div class="card">
-    <p class="title"> {card.name} </p> 
+    <p class="title" data-testid="cardName"> {card.name} </p> 
     <img src={card.images.large} alt="img ${card.name}"/>
     <p class="price" >{card.cardmarket.prices.avg1}€</p> 
     <button on:click={addToCart(JSON.stringify(card))}>Ajouter au panier</button>

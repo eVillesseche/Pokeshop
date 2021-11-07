@@ -3,7 +3,7 @@
 </script>
 
 <script>
-	import Shop from '$lib/components/shop.svelte'
+	import Shop from '../lib/components/shop.svelte'
 	let nPage = 1;
 </script>
 
