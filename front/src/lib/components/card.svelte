@@ -58,7 +58,6 @@ function alreadyExist(json){
         border-radius: 16px;
         margin: 0.4em auto;
         padding:5px ;
-        width: 70%;
         text-align: center;
     }
     

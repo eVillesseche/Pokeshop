@@ -1,12 +1,12 @@
 <script context="module">
-	export function load({ error, status }) {
-		return {
-			props: {
-				title: `<p> ${status} </p>
-                <p> ${error.message}</p>`
-			}
-		};
-	}
+	// export function load({ error, status }) {
+	// 	return {
+	// 		props: {
+	// 			title: `<p> ${status} </p>
+    //             <p> ${error.message}</p>`
+	// 		}
+	// 	};
+	// }
 </script>
 
 <script>

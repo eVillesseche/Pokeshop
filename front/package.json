@@ -2,7 +2,7 @@
   "name": "pokeshop",
   "version": "0.0.1",
   "scripts": {
-    "dev": "svelte-kit dev",
+    "dev": "vite dev",
     "build": "svelte-kit build",
     "preview": "svelte-kit preview",
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. .",
@@ -40,6 +40,7 @@
     ]
   },
   "dependencies": {
-    "@babel/core": "^7.16.0"
+    "@babel/core": "^7.16.0",
+    "@sveltejs/adapter-auto": "^2.0.0"
   }
 }
